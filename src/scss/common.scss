@@ -1,1 +1,11 @@
 // Заголовки, загальні БЕМ блоки та інше...
+.main-title {
+  font-size: toRem(70);
+  letter-spacing: toRem(1);
+  color: var(--text-title);
+}
+.sub-title {
+  font-size: toRem(20);
+  letter-spacing: toRem(0.4);
+  color: var(--text-title-sub);
+}
