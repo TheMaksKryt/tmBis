@@ -2,13 +2,35 @@
 // Сніппет (HTML): btn
 
 .button {
-	display: inline-flex;
-	padding: 0px 0px;
-	@media (any-hover: hover) {
-		&:hover {
-		}
-	}
-	&--fw {
-		width: 100%;
-	}
+  display: inline-flex;
+  padding: 0px toRem(15);
+  min-height: toRem(40);
+  background-color: var(--bg-button);
+  transition: all 0.3s;
+  border-radius: toRem(12);
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  border: 1px solid transparent;
+  @media (any-hover: hover) {
+    &:hover {
+      color: var(--black);
+      border-color: var(--text-gray);
+      background-color: transparent;
+    }
+  }
+  &--fw {
+    width: 100%;
+  }
+  &_border {
+    color: var(--black);
+    border: 1px solid var(--text-gray);
+    background-color: transparent;
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--white);
+        background-color: var(--bg-button);
+      }
+    }
+  }
 }
