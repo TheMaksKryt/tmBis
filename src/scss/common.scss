@@ -3,9 +3,29 @@
   font-size: toRem(70);
   letter-spacing: toRem(1);
   color: var(--text-title);
+  @media (max-width: $tablet) {
+    font-size: toRem(35);
+  }
+  &_little {
+    font-size: toRem(47);
+    margin-bottom: toRem(15);
+    @media (max-width: $tablet) {
+      font-size: toRem(22);
+      margin-bottom: toRem(5);
+    }
+  }
 }
 .sub-title {
   font-size: toRem(20);
   letter-spacing: toRem(0.4);
   color: var(--text-title-sub);
+  @media (max-width: $tablet) {
+    font-size: toRem(16);
+  }
+  &_little {
+    font-size: toRem(16);
+    @media (max-width: $tablet) {
+      font-size: toRem(14);
+    }
+  }
 }

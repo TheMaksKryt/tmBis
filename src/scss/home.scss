@@ -1,5 +1,164 @@
 //====================================================================================================
 
+.page {
+  &__main {
+    @include adaptiveValue("margin-top", 90, 15);
+    padding: toRem(30) 0 toRem(480) 0;
+    @media (max-width: $tablet) {
+      padding: toRem(15) 0 toRem(250) 0;
+    }
+    @media (max-width: $mobile) {
+      padding: toRem(10) 0 toRem(150) 0;
+    }
+  }
+  &__just-text {
+    padding: toRem(250) 0 toRem(10) 0;
+    @media (max-width: $tablet) {
+      padding: toRem(150) 0 toRem(10) 0;
+    }
+    @media (max-width: $mobile) {
+      padding: toRem(35) 0 toRem(5) 0;
+    }
+  }
+  &__fastest {
+    padding: toRem(100) 0 toRem(90) 0;
+    @media (max-width: $tablet) {
+      padding: toRem(50) 0 toRem(60) 0;
+    }
+    @media (max-width: $mobile) {
+      padding: toRem(25) 0 toRem(35) 0;
+    }
+  }
+}
+//========================================================================================================================================================
 
+.main-page {
+  background: url("@img/main-screen/lines.png") 0 0 / 100% no-repeat;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    max-width: toRem(650);
+    text-align: center;
+  }
+
+  &__sub-title {
+    max-width: toRem(600);
+    text-align: center;
+  }
+
+  &__actions {
+  }
+
+  &__button {
+  }
+}
+.main-page__container > * {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+//========================================================================================================================================================
+
+.just-text {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__skibididop {
+    color: var(--text-color-sub);
+  }
+}
 
 //====================================================================================================
+.fastest {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__header {
+    text-align: center;
+    @include adaptiveValue("padding-bottom", 60, 25);
+    max-width: toRem(620);
+  }
+
+  &__title {
+  }
+
+  &__sub {
+  }
+
+  &__cards {
+  }
+}
+
+.cards-fastest {
+  display: block;
+  margin: 0 toRem(-12) toRem(-10);
+  @media (min-width: $mobileSmall) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media (max-width: $mobileSmall) {
+    margin: 0 toRem(-15) toRem(-10);
+  }
+  &__item {
+    flex: 0 1 33.333%;
+    @media (min-width: $mobileSmall) {
+      padding: 0 toRem(12) toRem(10);
+    }
+    @media (max-width: $tablet) {
+      flex: 0 1 50%;
+    }
+    @media (max-width: $mobileSmall) {
+      padding-bottom: toRem(10);
+    }
+  }
+  &__content {
+    background-color: var(--white);
+    border-radius: toRem(20);
+    padding: toRem(40) toRem(40) toRem(60);
+    display: flex;
+    flex-direction: column;
+    border: toRem(1) solid #e9eaed;
+    min-height: 100%;
+    @media (max-width: $mobile) {
+      padding: toRem(20) toRem(20) toRem(30);
+    }
+    @media (max-width: $mobileSmall) {
+      padding: toRem(10) toRem(10) toRem(20);
+      border-radius: 0;
+    }
+  }
+  &__image {
+    &:not(:last-child) {
+      margin-bottom: toRem(20);
+    }
+  }
+  &__title {
+    color: var(--text-title-sub);
+    font-size: toRem(16);
+  }
+  &__label {
+    margin-top: toRem(2);
+    color: var(--text-color-sub);
+  }
+  &__learn {
+    color: var(--text-light);
+    margin-top: toRem(60);
+    @media (max-width: $tablet) {
+      margin-top: toRem(30);
+    }
+  }
+}
+
+//========================================================================================================================================================

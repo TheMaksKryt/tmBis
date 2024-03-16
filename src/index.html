@@ -1,15 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	@@include('html/_head.htm',{
-	"title":"HomePage"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_js.htm',{})
-	</body>
+  @@include('html/_head.htm',{ "title":"HomePage" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <section class="page__main main-page">
+          <div class="main-page__container">
+            <h1 class="main-page__title main-title">
+              Customer relationship magic.
+            </h1>
+            <p class="main-page__sub-title sub-title">
+              Powerful, flexible and data-driven, Attio makes it easy to build
+              the exact CRM your business needs.
+            </p>
+            <div class="main-page__actions">
+              <a href="#" class="main-page__button button">Get started</a>
+              <a href="#" class="main-page__button button button_border"
+                >Talk to sales</a
+              >
+            </div>
+          </div>
+        </section>
+        <div class="page__just-text just-text">
+          <div class="just-text__container">
+            <p class="just-text__skibididop">Powering leading companies like</p>
+          </div>
+        </div>
+        <section class="page__fastest fastest">
+          <div class="fastest__container">
+            <div class="fastest__header">
+              <h2 class="fastest__title main-title main-title_little">
+                The fastest & most flexible CRM you'll ever use.
+              </h2>
+              <p class="fastest__sub sub-title sub-title_little">
+                And it's all powered by Particle — the data <br />
+                model for teams that want to build faster.
+              </p>
+            </div>
+            <div class="fastest__cards cards-fastest">
+              <div class="cards-fastest__item">
+                <div class="cards-fastest__content">
+                  <img
+                    class="cards-fastest__image"
+                    src="@img/fastest/03.png"
+                    alt="03"
+                  />
+                  <div class="cards-fastest__title">
+                    Real-time data, blazingly fast.
+                  </div>
+                  <div class="cards-fastest__learn">Learn more</div>
+                </div>
+              </div>
+              <div class="cards-fastest__item">
+                <div class="cards-fastest__content">
+                  <img
+                    class="cards-fastest__image"
+                    src="@img/fastest/03.png"
+                    alt="03"
+                  />
+                  <div class="cards-fastest__title">
+                    Top-to-bottom customization.
+                  </div>
+                  <div class="cards-fastest__label">
+                    Easily design, build and implement the only CRM your
+                    business will ever need.
+                  </div>
+                  <div class="cards-fastest__learn">Learn more</div>
+                </div>
+              </div>
+              <div class="cards-fastest__item">
+                <div class="cards-fastest__content">
+                  <img
+                    class="cards-fastest__image"
+                    src="@img/fastest/01.png"
+                    alt="01"
+                  />
+                  <div class="cards-fastest__title">
+                    Effortless collaboration.
+                  </div>
+                  <div class="cards-fastest__label">
+                    Take notes, manage tasks and keep your entire team on the
+                    same page, all the time.
+                  </div>
+                  <div class="cards-fastest__learn">Learn more</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+  </body>
 </html>
